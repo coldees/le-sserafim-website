@@ -18,9 +18,18 @@ hr {
   padding-top: 10px;  
   margin-bottom: 0;
   font-size: 96px;
-  padding-left: 130px;
-  padding-right: 90px;
 }
+  
+   .header-title h1 {
+    font-size: 96px;
+    padding-left: 40px;
+        }
+  
+  .header-title h3 {
+    padding-right: 200px;
+    padding-left: 20px;
+        }
+  
   
 body {
 font-family: "inter", bold;
@@ -52,6 +61,9 @@ ul.names li a  {
   padding-top: 50px;
   }
   
+  iframe {
+  padding-left: 50px;  
+  }
 
 .headers {
   display: flex;
@@ -97,33 +109,35 @@ ul.names li a  {
         
        }
   
-       .header-title h1 {
-        padding-right: 200px;
-        padding-left: 201px;
-    
-        }
-         
-  
       .header-title h3 {
        margin: 0 0; 
         
        }
-
-  .albums {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 5px;
-  gap: 5px;
-  }
   
-  .albums div {
-  background-color: #ffffff;
-  color: #000;
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
+  .carousel {
+  overflow: hidden;
+  width: 100%;
 }
+
+.carousel-track {
+  display: flex;
+  gap: 0px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.carousel-track img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 
 </style>
 </head>
@@ -131,7 +145,7 @@ ul.names li a  {
   
  <div class="header-title">
   <h1>LE SSERAFIM</h1>
-  <h3>5TH MINI ALBUM</h3>
+  <h3> 5TH MINI ALBUM </h3>
   <h1>HOT</h1>
 </div>
   
@@ -151,7 +165,7 @@ ul.names li a  {
 
 <div class="container">
 <div class="grid-item-left">
-  <img src="group-b.jpg" alt="black and white picture of popular korean girl group; LE SSERAFIM" width="850" height="583">
+  <img src="group-b.jpg" alt="black and white picture of popular korean girl group; LE SSERAFIM" width="725" height="483">
 
   </div>
   
@@ -159,7 +173,7 @@ ul.names li a  {
 <ul>  
 <li><a href="index.html">I. HOT</a></li>
 <li><a href="concept-photo.html">II. CONCEPT PHOTO </a></li>
-<li><a href="albums.html">III. ALBUM</a></li>
+<li><a href="album.html">III. ALBUM</a></li>
 <li><a href="about.html">IIII. ABOUT</a></li>
 </ul>
 </div>
@@ -169,25 +183,74 @@ ul.names li a  {
   
   <div>
   <div class="second-header">
-  <h1> ALBUMS </h1>
+  <h1> CONCEPT PHOTOS </h1>
   </div>
   
-  <div class="albums">
-  <div><img src="le-sserafim-2.jpg" width="237" height="237"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>  
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>  
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
-  <div><img src="sdadasdadadsa" width="0" height="0"></div>
+  
+<h3> — WEVERSE ver. </h3>
+ <div class="carousel-1">
+  <div class="carousel-track">
+    <img src="chaewon-w.jpg" alt="chaewon">
+    <img src="sakura-w.jpg" alt="sakura">
+    <img src="yunjin-w.jpg" alt="yunjin">
+    <img src="kazuha-w.jpg" alt="kazuha">
+    <img src="eunchae-w.jpg" alt="eunchae">
+    <img src="chaewon-w.jpg" alt="chaewon">
+    <img src="sakura-w.jpg" alt="sakura">
+    <img src="yunjin-w.jpg" alt="yunjin">
+    <img src="kazuha-w.jpg" alt="kazuha">
+    <img src="eunchae-w.jpg" alt="eunchae">
   </div>
-  </div>
+</div>
+  
+<h3> — BLEACHED AURA  </h3>
+  <div class="carousel-3">
+  <div class="carousel-track">
+    <img src="chaewon-b.jpg" alt="chaewon">
+    <img src="sakura-b.jpg" alt="sakura">
+    <img src="yunjin-b.jpg" alt="yunjin">
+    <img src="kazuha-b.jpg" alt="kazuha">
+    <img src="eunchae-b.jpg" alt="eunchae">
+    <img src="chaewon-b.jpg" alt="chaewon">
+    <img src="sakura-b.jpg" alt="sakura">
+    <img src="yunjin-b.jpg" alt="yunjin">
+    <img src="kazuha-b.jpg" alt="kazuha">
+   <img src="eunchae-b.jpg" alt="eunchae">
 
+  </div>
+</div>
+  
+<h3> — DRENCHED VETIVER  </h3>
+  <div class="carousel-3">
+  <div class="carousel-track">
+    <img src="chaewon-d.jpg" alt="chaewon">
+    <img src="sakura-d.jpg" alt="sakura">
+    <img src="yunjin-d.jpg" alt="yunjin">
+    <img src="kazuha-d.jpg" alt="kazuha">
+    <img src="eunchae-d.jpg" alt="eunchae">
+    <img src="chaewon-d.jpg" alt="chaewon">
+    <img src="sakura-d.jpg" alt="sakura">
+    <img src="yunjin-d.jpg" alt="yunjin">
+    <img src="kazuha-d.jpg" alt="kazuha">
+    <img src="eunchae-d.jpg" alt="eunchae">
+  </div>
+    
+    <h3> — TANNED GUAIAC </h3>
+  <div class="carousel-2">
+  <div class="carousel-track">
+    <img src="chaewon-t.jpg" alt="chaewon">
+    <img src="sakura-t.jpg" alt="sakura">
+    <img src="yunjin-t.jpg" alt="yunjin">
+    <img src="kazuha-t.jpg" alt="kazuha">
+    <img src="eunchae-t.jpg" alt="eunchae">
+    <img src="chaewon-t.jpg" alt="chaewon">
+    <img src="sakura-t.jpg" alt="sakura">
+    <img src="yunjin-t.jpg" alt="yunjin">
+    <img src="kazuha-t.jpg" alt="kazuha">
+    <img src="eunchae-t.jpg" alt="eunchae">
+  </div>
+</div>
+</div>
   
   </body>
 </html>
